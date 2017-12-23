@@ -405,6 +405,7 @@ Trader.getCapabilities = function() {
       'OMG',
       'POWR',
       'QTUM',
+      'XRP',
       'ZEC',
     ],
     markets: [
@@ -524,6 +525,11 @@ Trader.getCapabilities = function() {
         pair: ['ETH', 'QTUM'],
         minimalOrder: { amount: 0.01, unit: 'asset' },
         precision: 0.000001,
+      },
+      {
+        pair: ['ETH', 'XRP'],
+        minimalOrder: { amount: 1, unit: 'asset' },
+        precision: 0.00000001
       },
       {
         pair: ['ETH', 'ZEC'],
